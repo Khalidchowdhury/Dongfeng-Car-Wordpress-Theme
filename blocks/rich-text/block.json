@@ -1,0 +1,34 @@
+{
+    "name": "acf/rich-text",
+    "title": "Rich Text",
+    "description": "Rich text block with background color.",
+    "style": [ "file:./rich-text.css" ],
+    "category": "mukto",
+    "icon":{
+        "src": "text-page"
+    },
+
+    "keywords": ["rich", "text", "text with background color"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "rich-text.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "customClassName": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "gradients": true
+        }
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "rich_text": "This is an example rich text block!"
+            }
+        }
+    }
+}

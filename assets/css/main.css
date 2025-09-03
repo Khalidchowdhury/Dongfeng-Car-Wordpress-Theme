@@ -1,0 +1,42 @@
+/*=============
+Main css
+==============*/
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    /* font-family: 'Lobster', cursive; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%
+}
+
+
+/* error */
+.error_page {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

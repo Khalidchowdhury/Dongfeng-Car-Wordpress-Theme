@@ -1,0 +1,19 @@
+/* font face  acumin-pro  otf 400, 600, 700 */
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('./AcuminPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('./AcuminPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('./AcuminPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
