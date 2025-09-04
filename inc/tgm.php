@@ -16,16 +16,16 @@ function mukto_register_required_plugins() {
 		// 	'slug'      => 'instagram-feed',
 		// 	'required'  => true,
 		// ),
-		array(
-			'name'      => 'Contact Form 7',
-			'slug'      => 'contact-form-7',
-			'required'  => true,
-		),
-		array(
-			'name'      => 'Advanced Custom Fields: Font Awesome Field',
-			'slug'      => 'advanced-custom-fields-font-awesome',
-			'required'  => true,
-		),
+		// array(
+		// 	'name'      => 'Contact Form 7',
+		// 	'slug'      => 'contact-form-7',
+		// 	'required'  => true,
+		// ),
+		// array(
+		// 	'name'      => 'Advanced Custom Fields: Font Awesome Field',
+		// 	'slug'      => 'advanced-custom-fields-font-awesome',
+		// 	'required'  => true,
+		// ),
 		// array(
 		// 	'name'      => 'Newsletter',
 		// 	'slug'      => 'newsletter',

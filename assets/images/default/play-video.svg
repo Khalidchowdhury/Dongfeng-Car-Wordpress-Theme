@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0.4;
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #bbc6cc;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Group_20535" data-name="Group 20535">
+        <path id="Path_148309-2" data-name="Path 148309-2" class="cls-1" d="M20,0H59a20,20,0,0,1,0,40H20A20,20,0,0,1,20,0Z"/>
+        <g id="Group_20530" data-name="Group 20530">
+          <path id="Rectangle_279" data-name="Rectangle 279" class="cls-2" d="M21.91,2.88H57.1A17.12,17.12,0,0,1,74.21,20h0A17.12,17.12,0,0,1,57.1,37.12H21.91A17.12,17.12,0,0,1,4.79,20h0A17.12,17.12,0,0,1,21.91,2.88Z"/>
+          <g id="play-button-arrowhead">
+            <path id="Path_573" data-name="Path 573" class="cls-3" d="M36.11,14.72c-1-.59-1.86-.11-1.86,1.08v8.77c0,1.19.83,1.67,1.86,1.08l7.67-4.4a1.13,1.13,0,0,0,0-2.14Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

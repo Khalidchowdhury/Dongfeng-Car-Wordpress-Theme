@@ -1,0 +1,1614 @@
+[data-inviewport="contentSlideUp"] {
+    opacity: 0;
+    transform: translateY(20%);
+}
+
+[data-inviewport="contentSlideUp"].is-inViewport {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s;
+}
+
+#Configurator {
+    position: relative;
+    display: flex;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator {
+        flex-direction: column;
+        background: radial-gradient(circle, #25334e 0%, #060f14 100%);
+    }
+}
+
+#Configurator .left-container {
+    background: radial-gradient(circle, #25334e 0%, #060f14 100%);
+    width: 62.782%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container {
+        background: none;
+        width: 100%;
+    }
+}
+
+#Configurator .left-container .left-inner-container {
+    padding: 9.844vw 6.938vw 0;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container {
+        padding: 36.977vw 4.651vw 0;
+    }
+}
+
+#Configurator .left-container .left-inner-container .title {
+    font-family: FZ-Heavy;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    margin-bottom: .719vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .title {
+        font-size: 6.047vw;
+        letter-spacing: .605vw;
+        margin-bottom: 2.326vw;
+        line-height: 9.302vw;
+        margin-left: 2.326vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .sub-title {
+    color: rgba(252, 252, 252, .5);
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .sub-title {
+        margin-left: 2.326vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container {
+    margin-top: 5vw;
+    height: 26.563vw;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container {
+        margin-top: 19.767vw;
+        height: 48.651vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container.add-on {
+        margin-top: 4.86vw;
+        height: 64vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .followmouse {
+    pointer-events: none;
+    width: 5.813vw;
+    height: 5.813vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    padding: 0 .34vw;
+    background-color: #fff;
+    transition: transform .1s ease, opacity .1s ease;
+    opacity: 0;
+}
+
+@media screen and (max-width:1024px) {
+    #Configurator .left-container .left-inner-container .carousel-container .followmouse {
+        display: none;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .followmouse .arrow {
+    width: .5vw;
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .followmouse .arrow:last-of-type {
+    transform: rotate(180deg);
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .followmouse span {
+    color: #18191d;
+    font-family: FZ-Heavy;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper {
+    position: absolute;
+    width: 48.25vw;
+    top: 0;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper {
+        width: 100%;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper.rims .wrapper-carousel .item {
+    z-index: 1;
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel {
+    cursor: grab;
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item {
+    position: relative;
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .circle-left {
+    position: absolute;
+    width: 6.063vw;
+    top: 12.125vw;
+    left: 9.3%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .circle-left {
+        width: 11.628vw;
+        top: 21.791vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .circle-right {
+    position: absolute;
+    width: 6.063vw;
+    top: 12.375vw;
+    right: 8%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .circle-right {
+        width: 11.628vw;
+        top: 22.256vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow {
+    position: relative;
+    z-index: -1;
+    display: block;
+    top: -4.3vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow {
+        top: -6.977vw;
+        opacity: .7;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back-left {
+    top: -4.8vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back-left {
+        top: -9vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back {
+    top: -4.5vw;
+    width: 73%;
+    left: 13%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back {
+        top: -8vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back-right {
+    top: -5.2vw;
+    width: 73%;
+    left: 13%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.back-right {
+        top: -10vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.front-35 {
+    top: -6vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.front-35 {
+        top: -11vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.side {
+        top: -6.977vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.front {
+    top: -4.2vw;
+    width: 73%;
+    left: 13%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .round-shadow.front {
+        top: -7.2vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .desk {
+        display: none;
+    }
+}
+
+@media screen and (min-width:769px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .wrapper-carousel .item .mobile {
+        display: none;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container {
+    position: absolute;
+    display: flex;
+    top: -3.125vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container {
+        top: -30%;
+        margin-left: 2.326vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container .color {
+    width: 1vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container .color {
+        width: 3.721vw;
+    }
+}
+
+#Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container .color-text-spacer {
+    padding: 0 1vw 0 .688vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .left-inner-container .carousel-container .carousel-wrapper .show-color-container .color-text-spacer {
+        padding: 0 2.326vw;
+    }
+}
+
+#Configurator .left-container .gallery-container {
+    text-align: center;
+    margin-top: -6%;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container {
+        margin-top: auto;
+        position: absolute;
+        right: 0;
+        top: 37.186vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container.add-on-gallery {
+        margin-top: auto;
+    }
+
+    #Configurator .left-container .gallery-container.add-on-gallery .gallery-list.gallery-open {
+        right: 0;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .12) 0%, transparent 50%, rgba(128, 128, 128, .27) 100%);
+    cursor: pointer;
+    margin-bottom: 7%;
+    border: .063vw solid rgba(255, 255, 255, .15);
+    border-radius: .813vw;
+    padding: .799vw;
+    min-width: 11.063vw;
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-button {
+        border-radius: 0;
+        margin-bottom: auto;
+        width: 41.163vw;
+        border-top-left-radius: 3.023vw;
+        border-top-right-radius: 3.023vw;
+        border: .233vw solid rgba(255, 255, 255, .15);
+        padding: 2.972vw;
+        transform: rotate(270deg);
+        transform-origin: right bottom;
+        position: relative;
+        top: -10.698vw;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #Configurator .left-container .gallery-container .gallery-button:hover {
+        opacity: .5;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-button .gallery-icon {
+    width: 1.188vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-button .gallery-icon {
+        width: 4.419vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-button .gallery-text {
+    margin-left: .958vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-button .gallery-text {
+        margin-left: 3.565vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list {
+    position: absolute;
+    background-color: #0b151d;
+    width: 100%;
+    transform: translateY(120%);
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list {
+        transform: none;
+        border-top-left-radius: 2.093vw;
+        border-bottom-left-radius: 2.093vw;
+        right: -120%;
+        top: 0;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list.gallery-open {
+    transform: translateY(0);
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list.gallery-open {
+        right: 0;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-cross {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b151d;
+    cursor: pointer;
+    top: -22%;
+    left: 48%;
+    width: 3.063vw;
+    height: 1.938vw;
+    border-top-left-radius: .563vw;
+    border-top-right-radius: .563vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-cross {
+        top: 8%;
+        left: auto;
+        right: 99%;
+        width: 11.395vw;
+        height: 7.209vw;
+        border-top-left-radius: 2.093vw;
+        border-top-right-radius: 2.093vw;
+        transform: rotate(270deg);
+        transform-origin: right bottom;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-cross:hover .gallery-cross-icon {
+        opacity: .5;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-cross .gallery-cross-icon {
+    width: .625vw;
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-cross .gallery-cross-icon {
+        width: 2.326vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.125vw 1.75vw .625vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing {
+        padding: 3.488vw 5.116vw;
+        flex-direction: column;
+        height: 145vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item {
+    position: relative;
+    cursor: pointer;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item:hover {
+        background-color: rgba(255, 255, 255, .06);
+        border-radius: .375vw;
+        border: .063vw solid rgba(255, 255, 255, .06);
+        backdrop-filter: blur(.313vw);
+        -webkit-backdrop-filter: blur(.313vw);
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item.gallery-selected {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: .375vw;
+    border: .063vw solid rgba(255, 255, 255, .15);
+    backdrop-filter: blur(.313vw);
+    -webkit-backdrop-filter: blur(.313vw);
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item.gallery-selected {
+        border-radius: 1.395vw;
+        border: .233vw solid rgba(255, 255, 255, .15);
+        backdrop-filter: blur(1.163vw);
+        -webkit-backdrop-filter: blur(1.163vw);
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item:after {
+    content: "";
+    position: absolute;
+    border-right: .233vw solid rgba(252, 252, 252, .2);
+    right: -8%;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item:after {
+        border-right: none;
+        border-top: .233vw solid rgba(252, 252, 252, .2);
+        right: auto;
+        width: 100%;
+        top: -10%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item.item-one:after {
+        border-top: none;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item.item-six:after {
+    border-right: none;
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item .gallery-inner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .625vw 0 .313vw;
+    width: 6.438vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item .gallery-inner-item {
+        padding: 2.326vw 0 1.163vw;
+        width: 23.953vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item .gallery-text {
+    margin-top: .625vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing .gallery-item .gallery-text {
+        margin-top: 2.326vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery {
+    width: 50%;
+    margin: auto;
+    padding: .5vw 0;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery {
+        width: 100%;
+        padding: 1.86vw 0;
+        height: 75vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item {
+    width: 9.313vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item {
+        width: 85%;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item:after {
+    content: "";
+    position: absolute;
+    border-right: .063vw solid rgba(252, 252, 252, .2);
+    right: -5.1%;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item:after {
+        border-right: none;
+        border-top: .233vw solid rgba(252, 252, 252, .2);
+        right: auto;
+        top: -6%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item.item-one:after {
+        border-top: none;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item.item-three:after {
+    border-right: none;
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item .gallery-inner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .438vw 0;
+    width: 9.313vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item .gallery-inner-item {
+        padding: 1.628vw 0;
+        width: 34.651vw;
+    }
+}
+
+#Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item .gallery-inner-item .gallery-car {
+    width: 8vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .left-container .gallery-container .gallery-list .gallery-listing.interior-gallery .gallery-item .gallery-inner-item .gallery-car {
+        width: 26.767vw;
+    }
+}
+
+#Configurator .right-container {
+    background-image: url("../images/configurator/right-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 37.218%;
+    padding: 13.5vw 4.063vw 0 4.822vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container {
+        background-image: none;
+        width: 100%;
+        padding: 0 8.14vw 37.137vw;
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav {
+    margin: 0 auto;
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .15);
+    border: .063vw solid #ccc;
+    border-radius: 2.188vw;
+    backdrop-filter: blur(.313vw) brightness(80%);
+    -webkit-backdrop-filter: blur(.313vw) brightness(80%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs {
+        border: .233vw solid #ccc;
+        border-radius: 8.14vw;
+        backdrop-filter: blur(1.163vw) brightness(80%);
+        -webkit-backdrop-filter: blur(1.163vw) brightness(80%);
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs::after {
+    content: "";
+    width: 50%;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    border-radius: 2.188vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs::after {
+        border-radius: 8.14vw;
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs::before {
+    content: "";
+    position: absolute;
+    height: .156vw;
+    background-color: #f00;
+    width: 3.313vw;
+    border-radius: .125vw;
+    bottom: 0;
+    left: 70%;
+    z-index: 1;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs::before {
+        left: 68%;
+        border: .233vw solid #f00;
+        width: 12.326vw;
+        border-radius: .465vw;
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs.slide::after {
+    right: 50%;
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs.slide::before {
+    left: 18.5%;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs.slide::before {
+        left: 16.5%;
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs .tab-slider-trigger {
+    font-family: FZ-Heavy;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1vw;
+    letter-spacing: .1vw;
+    padding: 1.25vw 3.125vw;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs .tab-slider-trigger {
+        padding: 4vw 4.651vw;
+        font-size: 3.721vw;
+        letter-spacing: .372vw;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs .tab-slider-trigger:hover {
+        opacity: .5;
+    }
+}
+
+#Configurator .right-container .switcher .tab-slider-nav .tab-slider-tabs .tab-slider-trigger.active {
+    color: #595657;
+}
+
+#Configurator .right-container .switcher .tab-slider-body {
+    margin-bottom: 1.25vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .switcher .tab-slider-body {
+        margin-bottom: 4.651vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .right-light-text {
+    color: rgba(252, 252, 252, .5);
+    margin-top: 2.274vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .right-light-text {
+        margin-top: 5.902vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container {
+    border: .063vw solid rgba(255, 255, 255, .4);
+    border-radius: 1.438vw;
+    backdrop-filter: blur(.313vw) brightness(80%);
+    -webkit-backdrop-filter: blur(.313vw) brightness(80%);
+    padding: 1.289vw 1.379vw 1.289vw 1.875vw;
+    margin-top: 2.852vw;
+    background-color: rgba(255, 255, 255, .15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container {
+        margin-top: 11.309vw;
+        border-radius: 4.186vw;
+        backdrop-filter: blur(1.163vw) brightness(80%);
+        -webkit-backdrop-filter: blur(1.163vw) brightness(80%);
+        padding: 4.798vw 3.505vw 3.402vw 4.186vw;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #Configurator .right-container .right-content-container .tabs-container:hover {
+        opacity: .6;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container.tabs-two {
+    margin-top: 1.875vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container.tabs-two {
+        margin-top: 4.419vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container .color-icon {
+    width: 1.25vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container .color-icon {
+        width: 5.581vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container .tabs-text-container {
+    flex: 1;
+    margin-left: 1.457vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container .tabs-text-container {
+        margin-left: 5.421vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container .tabs-text-container .tabs-subtitle {
+    color: rgba(252, 252, 252, .5);
+    margin-top: .375vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container .tabs-text-container .tabs-subtitle {
+        margin-top: 1.395vw;
+    }
+}
+
+#Configurator .right-container .right-content-container .tabs-container .arrow-icon {
+    width: .438vw;
+}
+
+@media screen and (max-width:768px) {
+    #Configurator .right-container .right-content-container .tabs-container .arrow-icon {
+        width: 1.628vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color,
+#Configurator .right-container .right-content-container #Body-Rims,
+#Configurator .right-container .right-content-container #Body-Interior {
+    display: none;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2.852vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container {
+        margin-top: 10.612vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn,
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:1024px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn:hover svg,
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2:hover svg,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn:hover svg,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2:hover svg,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn:hover svg,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2:hover svg {
+        transform: rotate(225deg) scale(1.25);
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn:hover .breadcrumb-text,
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2:hover .breadcrumb-text,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn:hover .breadcrumb-text,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2:hover .breadcrumb-text,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn:hover .breadcrumb-text,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2:hover .breadcrumb-text {
+        opacity: .6;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn svg,
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2 svg,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn svg,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2 svg,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn svg,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2 svg {
+    transform: rotate(225deg);
+    width: 1.188vw;
+    height: 1.188vw;
+    margin-right: .438vw;
+    transition: all 300ms;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn svg,
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2 svg,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn svg,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2 svg,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn svg,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2 svg {
+        width: 4.419vw;
+        height: 4.419vw;
+        margin-right: 1.628vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn .breadcrumb-text,
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcrumb-btn2 .breadcrumb-text,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn .breadcrumb-text,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcrumb-btn2 .breadcrumb-text,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn .breadcrumb-text,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcrumb-btn2 .breadcrumb-text {
+    transition: all 300ms;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .arrow,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .arrow,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .arrow {
+    width: .25vw;
+    margin: auto .438vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .arrow,
+    #Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .arrow,
+    #Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .arrow {
+        width: .93vw;
+        margin: auto 1.628vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-breadcrumb-container .breadcumb-title,
+#Configurator .right-container .right-content-container #Body-Rims .color-breadcrumb-container .breadcumb-title,
+#Configurator .right-container .right-content-container #Body-Interior .color-breadcrumb-container .breadcumb-title {
+    color: rgba(252, 252, 252, .5);
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container {
+    margin-top: 2.513vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container {
+        margin-top: 9.349vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-content-title,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-content-title,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-content-title {
+    font-family: FZ-Heavy;
+    font-size: 1vw;
+    letter-spacing: .1vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-content-title,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-content-title,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-content-title {
+        font-size: 3.721vw;
+        letter-spacing: .372vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.75vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container {
+        margin-top: 6.512vw;
+        align-items: flex-start;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: .938vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width {
+        margin-bottom: 3.488vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.width-60,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.width-60,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.width-60 {
+    width: 60%;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.width-60,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.width-60,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.width-60 {
+        width: 100%;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.width-40,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.width-40,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.width-40 {
+    width: 40%;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.width-40,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.width-40,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.width-40 {
+        width: 100%;
+    }
+}
+
+@keyframes rotate-left-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+@media screen and (min-width:1025px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before {
+        animation: rotate-left-right 4s linear infinite;
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-one .color-color-container:before {
+        background-image: url("../images/configurator/purple-white-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-two .color-color-container:before {
+        background-image: url("../images/configurator/purple-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-three .color-color-container:before {
+        background-image: url("../images/configurator/yellow-white-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-four .color-color-container:before {
+        background-image: url("../images/configurator/yellow-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-five .color-color-container:before {
+        background-image: url("../images/configurator/blue-white-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-six .color-color-container:before {
+        background-image: url("../images/configurator/blue-selected-icon.svg");
+    }
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width:hover.width-seven .color-color-container:before {
+        background-image: url("../images/configurator/white-selected-icon.svg");
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-one .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-one .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-one .color-color-container:before {
+    background-image: url("../images/configurator/purple-white-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-two .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-two .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-two .color-color-container:before {
+    background-image: url("../images/configurator/purple-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-three .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-three .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-three .color-color-container:before {
+    background-image: url("../images/configurator/yellow-white-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-four .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-four .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-four .color-color-container:before {
+    background-image: url("../images/configurator/yellow-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-five .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-five .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-five .color-color-container:before {
+    background-image: url("../images/configurator/blue-white-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-six .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-six .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-six .color-color-container:before {
+    background-image: url("../images/configurator/blue-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width.body-color-selected.width-seven .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width.body-color-selected.width-seven .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width.body-color-selected.width-seven .color-color-container:before {
+    background-image: url("../images/configurator/white-selected-icon.svg");
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width .color-color-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width .color-color-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width .color-color-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.875vw;
+    height: 2.875vw;
+    margin-right: 1.313vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width .color-color-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width .color-color-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width .color-color-container {
+        width: 10.698vw;
+        height: 10.698vw;
+        margin-right: 4.884vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width .color-color-container:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width .color-color-container:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon {
+    width: 1.938vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .color-width .color-color-container .color-color-icon {
+        width: 7.209vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: .625vw;
+    padding: .563vw 1.875vw .313vw .188vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container {
+        margin-top: 2.326vw;
+        padding: 2.093vw 6.977vw 1.163vw .698vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container:first-child,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container:first-child,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container:first-child {
+    margin-top: 0;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container {
+    border: .063vw solid rgba(255, 255, 255, .4);
+    border-radius: 1.125vw;
+    backdrop-filter: blur(.313vw) brightness(80%);
+    -webkit-backdrop-filter: blur(.313vw) brightness(80%);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container {
+        border: .233vw solid rgba(255, 255, 255, .4);
+        border-radius: 4.186vw;
+        backdrop-filter: blur(1.163vw) brightness(80%);
+        -webkit-backdrop-filter: blur(1.163vw) brightness(80%);
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-image-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-image-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-image-container {
+    background-color: transparent;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: .563vw;
+    height: .563vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container.rims-selected-container .rims-circle:before {
+        width: 2.093vw;
+        height: 2.093vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-image-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-image-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-image-container {
+    background-color: rgba(255, 255, 255, .18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3.813vw;
+    height: 3.813vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-image-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-image-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-image-container {
+        width: 14.186vw;
+        height: 14.186vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon {
+    width: 2.75vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-image-container .rims-icon {
+        width: 10.233vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .tabs-text-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .tabs-text-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .tabs-text-container {
+    flex: 1;
+    margin-left: 1.375vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .tabs-text-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .tabs-text-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .tabs-text-container {
+        margin-left: 5.116vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle {
+    color: rgba(252, 252, 252, .5);
+    margin-top: .375vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .tabs-text-container .tabs-subtitle {
+        margin-top: 1.395vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-circle {
+    position: relative;
+    background-color: rgba(255, 255, 255, .25);
+    border: .063vw solid rgba(255, 255, 255, .5);
+    width: 1.313vw;
+    height: 1.313vw;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .rims-content-container .rims-circle,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .rims-content-container .rims-circle,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .rims-content-container .rims-circle {
+        border: .233vw solid rgba(255, 255, 255, .5);
+        width: 4.884vw;
+        height: 4.884vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: .625vw;
+    padding: .688vw 1.875vw .625vw .938vw;
+    transition: all 500ms;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container {
+        margin-top: 2.326vw;
+        padding: 2.558vw 6.977vw 2.326vw 3.488vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container:first-child,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container:first-child,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container:first-child {
+    margin-top: 0;
+}
+
+@media screen and (min-width:1025px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container:hover,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container:hover,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container:hover {
+        border-radius: 1.125vw;
+        backdrop-filter: blur(.313vw) brightness(80%);
+        -webkit-backdrop-filter: blur(.313vw) brightness(80%);
+        background-color: rgba(255, 255, 255, .08);
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container.interior-selected-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container.interior-selected-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container.interior-selected-container {
+    border: .063vw solid rgba(255, 255, 255, .4);
+    border-radius: 1.125vw;
+    backdrop-filter: blur(.313vw) brightness(80%);
+    -webkit-backdrop-filter: blur(.313vw) brightness(80%);
+    background-color: rgba(255, 255, 255, .31);
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container.interior-selected-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container.interior-selected-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container.interior-selected-container {
+        border: .233vw solid rgba(255, 255, 255, .2);
+        border-radius: 4.186vw;
+        backdrop-filter: blur(1.163vw) brightness(80%);
+        -webkit-backdrop-filter: blur(1.163vw) brightness(80%);
+        background-color: rgba(255, 255, 255, .07);
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: .563vw;
+    height: .563vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container.interior-selected-container .rims-circle:before {
+        width: 2.093vw;
+        height: 2.093vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .interior-icon,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .interior-icon,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .interior-icon {
+    width: 3.375vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .interior-icon,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .interior-icon,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .interior-icon {
+        width: 12.558vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .tabs-text-container,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .tabs-text-container,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .tabs-text-container {
+    flex: 1;
+    margin-left: 1.375vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .tabs-text-container,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .tabs-text-container,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .tabs-text-container {
+        margin-left: 5.116vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle {
+    color: rgba(252, 252, 252, .5);
+    margin-top: .375vw;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .tabs-text-container .tabs-subtitle {
+        margin-top: 1.395vw;
+    }
+}
+
+#Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .rims-circle,
+#Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .rims-circle {
+    position: relative;
+    background-color: rgba(255, 255, 255, .25);
+    border: .063vw solid rgba(255, 255, 255, .5);
+    width: 1.313vw;
+    height: 1.313vw;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px) {
+
+    #Configurator .right-container .right-content-container #Body-Color .color-content-container .color-selection-container .interior-content-container .rims-circle,
+    #Configurator .right-container .right-content-container #Body-Rims .color-content-container .color-selection-container .interior-content-container .rims-circle,
+    #Configurator .right-container .right-content-container #Body-Interior .color-content-container .color-selection-container .interior-content-container .rims-circle {
+        border: .233vw solid rgba(255, 255, 255, .5);
+        width: 4.884vw;
+        height: 4.884vw;
+    }
+}

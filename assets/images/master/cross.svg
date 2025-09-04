@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.22 10.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #595657;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Group_504" data-name="Group 504">
+        <path id="close" class="cls-1" d="M6.05,5.1l4-4A.66.66,0,0,0,9.1.18l-4,4-4-4A.67.67,0,0,0,.2.2a.68.68,0,0,0,0,.92l4,4-4,4a.66.66,0,1,0,.92.95l0,0,4-4,4,4A.66.66,0,0,0,10,9.08Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

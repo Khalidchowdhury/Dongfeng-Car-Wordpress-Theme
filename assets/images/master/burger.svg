@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Group_503" data-name="Group 503">
+        <line id="Line_49" data-name="Line 49" class="cls-1" x1="0.5" y1="0.5" x2="12.5" y2="0.5"/>
+        <line id="Line_50" data-name="Line 50" class="cls-1" x1="9.5" y1="3.5" x2="12.5" y2="3.5"/>
+        <line id="Line_51" data-name="Line 51" class="cls-1" x1="0.5" y1="6.5" x2="12.5" y2="6.5"/>
+        <line id="Line_52" data-name="Line 52" class="cls-1" x1="0.5" y1="3.5" x2="7.5" y2="3.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

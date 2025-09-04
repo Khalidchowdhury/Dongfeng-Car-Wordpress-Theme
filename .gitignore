@@ -25,3 +25,5 @@ node_modules
 .greyhr
 Thumbs.db
 sftp-config.json
+# Ignore Frontend folder
+Frontend/

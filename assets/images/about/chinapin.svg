@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.4" height="42.943" viewBox="0 0 33.4 42.943">
+  <g id="Group_43632" data-name="Group 43632" transform="translate(-400 -1013)">
+    <g id="china_2_" data-name="china (2)" transform="translate(404.442 1017.442)">
+      <circle id="Ellipse_325" data-name="Ellipse 325" cx="12.587" cy="12.587" r="12.587" transform="translate(0 0)" fill="#d80027"/>
+      <g id="Group_43631" data-name="Group 43631" transform="translate(2.274 5.589)">
+        <path id="Path_582823" data-name="Path 582823" d="M2.078,296.8l1.081,3.326h3.5l-2.827,2.059,1.081,3.326-2.832-2.054-2.832,2.054,1.086-3.326L-2.5,300.126H1Z" transform="translate(2.5 -294.799)" fill="#ffda44"/>
+        <path id="Path_582824" data-name="Path 582824" d="M212.367,470.829l-.827-1.017-1.223.474.709-1.1-.827-1.022,1.267.338.714-1.1.068,1.311,1.272.337-1.228.47Z" transform="translate(-199.796 -457.055)" fill="#ffda44"/>
+        <path id="Path_582825" data-name="Path 582825" d="M274.88,412.682l.391-1.252-1.071-.758,1.311-.02.386-1.252.426,1.242,1.311-.015-1.052.783.421,1.242-1.071-.758Z" transform="translate(-260.666 -401.892)" fill="#ffda44"/>
+        <path id="Path_582826" data-name="Path 582826" d="M274.337,323l-.577,1.179.939.915-1.3-.186-.577,1.174-.225-1.291-1.3-.186,1.164-.611-.225-1.3.939.915Z" transform="translate(-257.908 -319.433)" fill="#ffda44"/>
+        <path id="Path_582827" data-name="Path 582827" d="M212.116,255.9l-.1,1.306,1.218.494-1.277.313-.093,1.311-.69-1.115-1.277.313.846-1-.695-1.11,1.218.494Z" transform="translate(-199.511 -255.9)" fill="#ffda44"/>
+      </g>
+    </g>
+    <g id="_01-home" data-name="01-home" transform="translate(400 1013)">
+      <g id="glyph" transform="translate(0 0)">
+        <path id="Path_582822" data-name="Path 582822" d="M76.7,4A16.719,16.719,0,0,0,60,20.7c0,4.473,2.71,10.218,8.055,17.073a90.811,90.811,0,0,0,7.938,8.886,1.022,1.022,0,0,0,1.413,0,90.811,90.811,0,0,0,7.938-8.886C90.69,30.918,93.4,25.173,93.4,20.7A16.719,16.719,0,0,0,76.7,4Zm0,28.629A11.929,11.929,0,1,1,88.629,20.7,11.942,11.942,0,0,1,76.7,32.629Z" transform="translate(-60 -4)" fill="#6e6e6e"/>
+      </g>
+    </g>
+  </g>
+</svg>

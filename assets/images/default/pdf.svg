@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.09 16.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="download">
+        <path id="Path_5243" data-name="Path 5243" class="cls-1" d="M16.2,14.46H.89a.85.85,0,0,0-.08,1.7H16.2a.85.85,0,1,0,.08-1.7Z"/>
+        <path id="Path_5244" data-name="Path 5244" class="cls-1" d="M8.54,0a.85.85,0,0,0-.85.85v9L4.89,7.05a.85.85,0,1,0-1.2,1.21l4.25,4.25a.85.85,0,0,0,1.21,0h0l4.26-4.25A.86.86,0,1,0,12.2,7.05L9.4,9.86v-9A.85.85,0,0,0,8.55,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
