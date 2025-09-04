@@ -1,100 +1,114 @@
 
-    <footer>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/footer-light.png" class="footer-light" />
-        <div class="footer-top-container">
-            <div class="footer-left-container">
-                <p class="footer-title" data-inviewport="contentSlideUp">GET IN TOUCH</p>
-                <div class="footer-left-tabs-container">
-                    <a href="https://wa.link/aees7g?utm_source=website&utm_medium=floatingbutton&utm_campaign=whatsapp"
-                        target="_blank" class="link-button" data-inviewport="contentSlideUp">
-                        <p class="link-texts gray">CHAT WITH US</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
-                            <rect x="0" y="0" width="20" height="20" rx="10" fill="#E60021"></rect>
-                            <path class="button-arrow-01" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
-                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path class="button-arrow-02" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
-                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="Book-A-Test-Drive.html" class="link-button" data-inviewport="contentSlideUp">
-                        <p class="link-texts gray">BOOK A TEST DRIVE</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
-                            <rect x="0" y="0" width="20" height="20" rx="10" fill="#E60021"></rect>
-                            <path class="button-arrow-01" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
-                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path class="button-arrow-02" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
-                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="social-link-container">
-                    <a href="https://www.facebook.com/SGDongfeng/" class="social-icons"
-                        data-inviewport="contentSlideUp" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/facebook.svg" class="img" />
-                    </a>
-                    <a href="https://www.instagram.com/dongfengsg/" class="social-icons"
-                        data-inviewport="contentSlideUp" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/instagram.svg" class="img" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/dongfeng-singapore/" class="social-icons"
-                        data-inviewport="contentSlideUp" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/linkedin.svg" class="img" />
-                    </a>
-                    <a href="https://www.youtube.com/@dongfengsg" class="social-icons"
-                        data-inviewport="contentSlideUp" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/youtube.svg" class="img" />
-                    </a>
-                    <a href="https://www.tiktok.com/@dongfengsg" class="social-icons"
-                        data-inviewport="contentSlideUp" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/tiktok.svg" class="img" />
-                    </a>
-                </div>
+<footer>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/footer-light.png" class="footer-light" />
+    <div class="footer-top-container">
+
+        <!-- Footer Details -->
+        <div class="footer-left-container">
+            <p class="footer-title" data-inviewport="contentSlideUp">
+                <?php echo get_field('footer_title', 'option'); ?>
+            </p>
+            <div class="footer-left-tabs-container">
+                <!-- Footer Action Menus -->
+                <?php if ( have_rows('footer_action_menu', 'option') ) : ?>
+                    <?php while ( have_rows('footer_action_menu', 'option') ) : the_row(); ?>
+                        <a href="<?php echo get_sub_field('menu_url'); ?>"
+                            target="_blank" class="link-button" data-inviewport="contentSlideUp">
+                            <p class="link-texts gray"><?php echo get_sub_field('menu_name'); ?></p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <rect x="0" y="0" width="20" height="20" rx="10" fill="#E60021"></rect>
+                                <path class="button-arrow-01" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path class="button-arrow-02" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white"
+                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            
             </div>
-            <div class="footer-right-container" data-inviewport="contentSlideUp">
-                <a href="/About-Us" class="footer-ref-text FZHeavy-14 white width1"
-                    data-text="ABOUT US"><span>ABOUT US</span></a>
-                <a href="/Gallery" class="footer-ref-text FZHeavy-14 white width2"
-                    data-text="GALLERY"><span>GALLERY</span></a>
-                <a href="/Dongfeng-Box-Configure" class="footer-ref-text FZHeavy-14 white width3"
-                    data-text="CONFIGURE YOUR BOX"><span>CONFIGURE YOUR BOX</span></a>
-                <a href="/Dongfeng-Box-Features" class="footer-ref-text FZHeavy-14 white width1"
-                    data-text="FEATURES"><span>FEATURES</span></a>
-                <a href="/Resources" class="footer-ref-text FZHeavy-14 white width2"
-                    data-text="RESOURCES"><span>RESOURCES</span></a>
-                <a href="/Contact-Us" class="footer-ref-text FZHeavy-14 white width3"
-                    data-text="CONTACT US"><span>CONTACT US</span></a>
-                <a href="/Dongfeng-Technology" class="footer-ref-text FZHeavy-14 white width1"
-                    data-text="TECHNOLOGY"><span>TECHNOLOGY</span></a>
-                <a href="/Dongfeng-Box-Specifications" class="footer-ref-text FZHeavy-14 white width2"
-                    data-text="SPECIFICATIONS"><span>SPECIFICATIONS</span></a>
-                <a href="Book-A-Test-Drive.html" class="footer-ref-text FZHeavy-14 white width3"
-                    data-text="BOOK A TEST DRIVE"><span>BOOK A TEST DRIVE</span></a>
+
+
+
+            <div class="social-link-container">
+                 <?php if ( have_rows('footer_socail_icons_', 'option') ) : ?>
+                    <?php while ( have_rows('footer_socail_icons_', 'option') ) : the_row(); 
+                        $social_image = get_sub_field('social_image'); 
+                        $social_link  = get_sub_field('social_link'); 
+                    ?>
+                        <?php if ( $social_image && $social_link ) : ?>
+                            <a href="<?php echo esc_url($social_link); ?>" 
+                            class="social-icons" 
+                            data-inviewport="contentSlideUp" 
+                            target="_blank">
+                                <img src="<?php echo esc_url($social_image['url']); ?>" 
+                                    alt="<?php echo esc_attr($social_image['alt']); ?>" 
+                                    class="img" />
+                            </a>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <p>No social icons found!</p>
+                <?php endif; ?>
             </div>
+
         </div>
-        <div class="footer-bottom-container" data-inviewport="contentSlideUp">
-            <div class="footer-bottom-left-container">
-                <p class="FZRegular-14 white copy-container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/copyright-icon.svg" class="copy-icon" />2024 DongFeng. All Rights
-                    Reserved
-                </p>
-                <p class="white disclaimer-container">
-                    *Disclaimer: All photos are for illustration purposes only. Please note that the actual
-                    interior and exterior colors of the vehicles may vary slightly from the <?php echo get_template_directory_uri(); ?>/assets/images presented on
-                    the website.
-                </p>
-            </div>
-            <a href="Terms-and-Conditions.html" class="privacy FZRegular-14 white"
-                data-text="Privacy Policy"><span>Privacy Policy</span></a>
-            <div class="company-container FZRegular-14 white">
-                <p>Website designed and built by&nbsp;</p>
-                <a href="http://www.elveslab.com/" class="company-container FZRegular-14 white" target="_blank"
-                    data-text="Elveslab"><span>Elveslab</span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/elveslab.svg"
-                        class="elveslab-logo img" /></a>
-            </div>
+
+        <!-- Footer Menus -->
+        <div class="footer-right-container" data-inviewport="contentSlideUp">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'footer_menu',    
+                'container'      => false,            
+                'items_wrap'     => '%3$s',             
+                'walker'         => new Footer_Menu_Walker() 
+            ));
+            ?>
         </div>
-    </footer>
+
+    </div>
+
+    <!-- Footer Bottom  -->
+    <div class="footer-bottom-container" data-inviewport="contentSlideUp">
+
+        <!-- Copyright Title & Descriptions -->
+        <div class="footer-bottom-left-container">
+            <p class="FZRegular-14 white copy-container">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/master/copyright-icon.svg" class="copy-icon" /><?php echo get_field('copyright_title', 'option'); ?>
+            </p>
+            <p class="white disclaimer-container">
+                <?php echo get_field('copyright_descriptions', 'option'); ?>
+            </p>
+        </div>
+
+        <!-- Privacy Policy Page -->
+        <?php 
+        $privacy_policy = get_field('privacy_policy_button', 'option'); 
+        if ( $privacy_policy ) : ?>
+            <a href="<?php echo esc_url($privacy_policy['url']); ?>" 
+            class="privacy FZRegular-14 white" 
+            data-text="<?php echo esc_attr($privacy_policy['title']); ?>" 
+            <?php echo $privacy_policy['target'] ? 'target="_blank"' : ''; ?>>
+                <span><?php echo esc_html($privacy_policy['title']); ?></span>
+            </a>
+        <?php endif; ?>
+
+        <!-- Developer Creadit -->
+        <div class="company-container FZRegular-14 white">
+            <?php echo get_field('developer_credit', 'option'); ?>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
 
 </div>
 

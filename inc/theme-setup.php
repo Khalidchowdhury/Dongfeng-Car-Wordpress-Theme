@@ -13,6 +13,7 @@ function mukto_bootstraping(){
     register_nav_menus(array(
         'nav_discover'  => __('Discover Menu', 'mukto'),
         'nav_secondary' => __('Secondary Menu', 'mukto'),
+        'footer_menu'   => __( 'Footer Menu', 'mukto' ),
     ));
 }
 add_action('after_setup_theme','mukto_bootstraping');
@@ -73,4 +74,35 @@ class Custom_Nav_Walker extends Walker_Nav_Menu {
             $output .= '</div>'; 
         }
     }
+}
+
+
+
+
+/*=============================================
+=            Footer Menus                    =
+=============================================*/
+
+class Footer_Menu_Walker extends Walker_Nav_Menu {
+
+    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+        
+        $base_classes = 'footer-ref-text FZHeavy-14 white';
+        $custom_classes = !empty($item->classes) ? esc_attr(implode(' ', $item->classes)) : '';
+        $all_classes = trim($base_classes . ' ' . $custom_classes);
+        $url = !empty($item->url) ? esc_url($item->url) : '#';
+        $title = esc_html($item->title);
+        $data_text = esc_attr(strtoupper($item->title));
+        $output .= sprintf(
+            '<a href="%s" class="%s" data-text="%s"><span>%s</span></a>',
+            $url,
+            $all_classes,
+            $data_text,
+            $title
+        );
+    }
+    
+    function start_lvl(&$output, $depth = 0, $args = null) {}
+    function end_lvl(&$output, $depth = 0, $args = null) {}
+    function end_el(&$output, $item, $depth = 0, $args = null) {}
 }
