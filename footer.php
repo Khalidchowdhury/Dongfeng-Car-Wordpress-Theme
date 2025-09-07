@@ -194,6 +194,79 @@
         });
     </script>
 
+    
+    <!-- Owl Carousel Initialization -->
+    <script>
+        jQuery(document).ready(function($){
+            $("#owl-News").owlCarousel({
+                items:3,
+                loop:true,
+                margin:30,
+                nav:true,
+                dots:true,
+                responsive:{
+                    0:{ items:1 },
+                    768:{ items:2 },
+                    1024:{ items:3 }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready(function($){
+    // ১) প্রথমে সব owl-carousel ইনিশিয়ালাইজ করো (প্রতিটি আলাদা)
+    $('.owl-color-wrapper .owl-carousel').each(function(){
+        var $owl = $(this);
+        $owl.owlCarousel({
+            items:1,
+            loop:true,
+            nav:false,
+            dots:false,
+            margin:0,
+            autoHeight:false,
+            responsive:{
+                0:{ items:1 },
+                768:{ items:1 }
+            }
+        });
+    });
+
+    // ২) প্রথমটি দেখাও, বাকিগুলো hide
+    $('.owl-color-wrapper').hide().eq(0).show();
+    // update initial color name
+    var initialName = $('.owl-color-wrapper').eq(0).data('color-name') || '';
+    $('#colorname-text').text(initialName);
+
+    // ৩) dot click handler: switch visible wrapper & update active classes & update color name
+    $('.colorPicker').on('click', '.dot1', function(){
+        var idx = $(this).data('index');
+        // active class toggle for icons (you can adapt CSS to .active/.hidden)
+        $('.colorPicker .dot1').removeClass('active');
+        $(this).addClass('active');
+
+        // show corresponding color wrapper
+        $('.owl-color-wrapper').hide().filter('[data-index="'+idx+'"]').show();
+
+        // update color text
+        var cname = $(this).data('color-name') || '';
+        $('#colorname-text').text(cname);
+    });
+
+    // ৪) menu buttons control visible owl carousel
+    $('.menu-button2 .back').on('click', function(){
+        var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
+        $visibleOwl.trigger('prev.owl.carousel');
+    });
+    $('.menu-button2 .next').on('click', function(){
+        var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
+        $visibleOwl.trigger('next.owl.carousel');
+    });
+});
+
+
+    </script>
+
 
 
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/owl.carousel.min.js"></script>

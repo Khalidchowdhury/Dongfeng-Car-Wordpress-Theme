@@ -1,63 +1,40 @@
 <div id="Car">
     <p class="car-bg-text">Exquisite Lifestyle</p>
 
-    <div class="car-car">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car.png" class="car-image" />
-        <div class="car-item reverse car-one">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
+    
+    <?php if( have_rows('car_features') ): ?>
+        <div class="car-car">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car.png" class="car-image" />
+
+            <?php 
+            $numbers = ['one','two','three','four','five','six'];
+            $i = 0; 
+
+            while( have_rows('car_features') ): the_row(); 
+                $title = get_sub_field('feature_title');
+                $subtitle = get_sub_field('feature_description');
+                $reverse = get_sub_field('reverse_layout') ? 'reverse' : ''; 
+                $item_class = 'car-item ' . $reverse . ' car-' . $numbers[$i];
+            ?>
+            <div class="<?php echo esc_attr($item_class); ?>">
+                <!-- Static dot image structure remains -->
+                <div class="car-dots">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
+                </div>
+
+                <!-- Dynamic text -->
+                <div class="car-text-container">
+                    <p class="car-description white"><?php echo esc_html($title); ?></p>
+                    <p class="FZRegular-14 white"><?php echo esc_html($subtitle); ?></p>
+                </div>
             </div>
-            <div class="car-text-container">
-                <p class="car-description white">CRYSTAL LED HEADLIGHTS</p>
-                <p class="FZRegular-14 white">Striking exterior</p>
-            </div>
+            <?php 
+                $i++; 
+            endwhile; 
+            ?>
         </div>
-        <div class="car-item car-two">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
-            </div>
-            <div class="car-text-container">
-                <p class="car-description white">SMART DRIVING TECHNOLOGY</p>
-                <p class="FZRegular-14 white">Automatic parking</p>
-            </div>
-        </div>
-        <div class="car-item car-three">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
-            </div>
-            <div class="car-text-container">
-                <p class="car-description white">FRAMELESS DOOR</p>
-                <p class="FZRegular-14 white">Unmatched elegance</p>
-            </div>
-        </div>
-        <div class="car-item reverse car-four">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
-            </div>
-            <div class="car-text-container">
-                <p class="car-description white">180° RECLINING SEATS</p>
-                <p class="FZRegular-14 white">Spacious</p>
-            </div>
-        </div>
-        <div class="car-item car-five">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
-            </div>
-            <div class="car-text-container">
-                <p class="car-description white">BOOT CAPACITY</p>
-                <p class="FZRegular-14 white">945L with knock down rear seats</p>
-            </div>
-        </div>
-        <div class="car-item reverse car-six">
-            <div class="car-dots">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/car-circle.svg" class="car-circle" />
-            </div>
-            <div class="car-text-container">
-                <p class="car-description white">STYLISH RING TAIL LIGHT</p>
-                <p class="FZRegular-14 white">Striking visual appeal</p>
-            </div>
-        </div>
-    </div>
+    <?php endif; ?>
+
 
 
 

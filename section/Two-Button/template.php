@@ -1,15 +1,35 @@
+
 <div id="Two-Button">
-    <a href="https://maps.app.goo.gl/kB6dtsp9X4EWyjzu9" target="_blank" class="showroom-container"
-        data-inviewport="contentSlideUp">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/showroom.jpg" class="img" />
-        <div class="showroom-text">
-            <p class="FZHeavy-18 white">OUR SHOWROOM</p>
-            <p class="showroom-desc FZRegular-14">Tai Seng Exchange, 1 Tai Seng Avenue, #01-23/24, Singapore
-                536464</p>
-        </div>
-    </a>
-    <a href="Book-A-Test-Drive.html" class="showroom-container" data-inviewport="contentSlideUp">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default/test-drive.jpg" class="img" />
-        <p class="showroom-text FZHeavy-18 white">BOOK A TEST DRIVE</p>
-    </a>
+    <?php if ( have_rows('action_box') ) : ?>
+        <?php while ( have_rows('action_box') ) : the_row(); ?>
+            <?php 
+                $link = get_sub_field('links');
+                $title = get_sub_field('title');
+                $description = get_sub_field('description');
+                $thumbnail_image = get_sub_field('thumbnail_image');
+
+                if (is_array($thumbnail_image) && isset($thumbnail_image['url'])) {
+                    $thumbnail_url = $thumbnail_image['url']; 
+                } elseif (is_numeric($thumbnail_image)) {
+                    $thumbnail_url = wp_get_attachment_url($thumbnail_image); 
+                } else {
+                    $thumbnail_url = $thumbnail_image; 
+                }
+            ?>
+
+            <?php if ($link && $thumbnail_url): ?>
+                <a href="<?php echo esc_url($link); ?>" target="_blank" class="showroom-container" data-inviewport="contentSlideUp">
+                    <img src="<?php echo esc_url($thumbnail_url); ?>" class="img" alt="<?php echo esc_attr($title); ?>" />
+                    <div class="showroom-text">
+                        <?php if ($title): ?>
+                            <p class="FZHeavy-18 white"><?php echo esc_html($title); ?></p>
+                        <?php endif; ?>
+                        <?php if ($description): ?>
+                            <p class="showroom-desc FZRegular-14"><?php echo esc_html($description); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </a>
+            <?php endif; ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </div>

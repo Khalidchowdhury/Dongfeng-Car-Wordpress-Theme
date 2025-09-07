@@ -106,3 +106,16 @@ class Footer_Menu_Walker extends Walker_Nav_Menu {
     function end_lvl(&$output, $depth = 0, $args = null) {}
     function end_el(&$output, $item, $depth = 0, $args = null) {}
 }
+
+
+
+
+
+function rtd_acf_image_url($img){
+    if (!$img) return '';
+    if (is_array($img) && !empty($img['url'])) return $img['url'];
+    if (is_numeric($img)) return wp_get_attachment_url($img);
+    return $img; 
+}
+
+

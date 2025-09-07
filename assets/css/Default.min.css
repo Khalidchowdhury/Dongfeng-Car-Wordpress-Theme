@@ -826,7 +826,7 @@ body {
 
 .spacer {
     height: 1000px;
-    
+
 }
 
 #Car {
@@ -2543,7 +2543,7 @@ body {
 #News {
     position: relative;
     z-index: 1;
-    padding: 0 4.688vw 0;
+    padding: 60px 4.688vw 60px;
 }
 
 @media screen and (max-width:768px) {
