@@ -104,12 +104,6 @@
 
 
 
-
-
-
-
-
-
 </div>
 
     <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery-3.7.1.min.js"></script>
@@ -215,54 +209,42 @@
 
     <script>
         jQuery(document).ready(function($){
-    // ১) প্রথমে সব owl-carousel ইনিশিয়ালাইজ করো (প্রতিটি আলাদা)
-    $('.owl-color-wrapper .owl-carousel').each(function(){
-        var $owl = $(this);
-        $owl.owlCarousel({
-            items:1,
-            loop:true,
-            nav:false,
-            dots:false,
-            margin:0,
-            autoHeight:false,
-            responsive:{
-                0:{ items:1 },
-                768:{ items:1 }
-            }
-        });
-    });
+            $('.owl-color-wrapper .owl-carousel').each(function(){
+                    var $owl = $(this);
+                    $owl.owlCarousel({
+                        items:1,
+                        loop:true,
+                        nav:false,
+                        dots:false,
+                        margin:0,
+                        autoHeight:false,
+                        responsive:{
+                            0:{ items:1 },
+                            768:{ items:1 }
+                        }
+                    });
+                });
 
-    // ২) প্রথমটি দেখাও, বাকিগুলো hide
-    $('.owl-color-wrapper').hide().eq(0).show();
-    // update initial color name
-    var initialName = $('.owl-color-wrapper').eq(0).data('color-name') || '';
-    $('#colorname-text').text(initialName);
-
-    // ৩) dot click handler: switch visible wrapper & update active classes & update color name
-    $('.colorPicker').on('click', '.dot1', function(){
-        var idx = $(this).data('index');
-        // active class toggle for icons (you can adapt CSS to .active/.hidden)
-        $('.colorPicker .dot1').removeClass('active');
-        $(this).addClass('active');
-
-        // show corresponding color wrapper
-        $('.owl-color-wrapper').hide().filter('[data-index="'+idx+'"]').show();
-
-        // update color text
-        var cname = $(this).data('color-name') || '';
-        $('#colorname-text').text(cname);
-    });
-
-    // ৪) menu buttons control visible owl carousel
-    $('.menu-button2 .back').on('click', function(){
-        var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
-        $visibleOwl.trigger('prev.owl.carousel');
-    });
-    $('.menu-button2 .next').on('click', function(){
-        var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
-        $visibleOwl.trigger('next.owl.carousel');
-    });
-});
+                $('.owl-color-wrapper').hide().eq(0).show();
+                var initialName = $('.owl-color-wrapper').eq(0).data('color-name') || '';
+                $('#colorname-text').text(initialName);
+                $('.colorPicker').on('click', '.dot1', function(){
+                    var idx = $(this).data('index');
+                    $('.colorPicker .dot1').removeClass('active');
+                    $(this).addClass('active');
+                    $('.owl-color-wrapper').hide().filter('[data-index="'+idx+'"]').show();
+                    var cname = $(this).data('color-name') || '';
+                    $('#colorname-text').text(cname);
+                });
+                $('.menu-button2 .back').on('click', function(){
+                    var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
+                    $visibleOwl.trigger('prev.owl.carousel');
+                });
+                $('.menu-button2 .next').on('click', function(){
+                    var $visibleOwl = $('.owl-color-wrapper:visible .owl-carousel');
+                    $visibleOwl.trigger('next.owl.carousel');
+                });
+            });
 
 
     </script>
@@ -984,6 +966,260 @@
             }, 2800);
         });
     </script>
+
+
+    <!-- About Page Script -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+        //]]>
+    </script>
+
+    <script>
+
+            const swiper = new Swiper('.swiper', {
+                direction: 'vertical',
+                loop: true,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 5,
+                breakpoints: {
+
+                    768: {
+                        slidesPerView: 3
+                    }
+                },
+
+            });
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+
+                        animateNumbers();
+
+                        $('.cnpin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '0.5s'
+                        });
+
+                        $('.sgpin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '0.7s'
+                        });
+
+                        $('.jppin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '0.9s'
+                        });
+
+                        $('.hkpin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '1.1s'
+                        });
+
+                        $('.rupin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '1.3s'
+                        });
+
+                        $('.swpin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '1.5s'
+                        });
+
+
+                        $('.vtpin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '1.7s'
+                        });
+
+
+                        $('.nppin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '1.9s'
+                        });
+
+                        $('.mypin').css({
+                            'animation': 'pinPop2 1s forwards',
+                            'animation-delay': '2.1s'
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(document.querySelector('.stats'));
+
+            function animateNumbers() {
+                animateNumber('total-assets', 0, 499.3, '¥', '', 2);
+                animateNumber('employees', 0, 127000, '', '', 2);
+                animateNumber('overseas-sales', 0, 1.2, '', 'M', 2);
+                animateNumber('countries-available', 0, 100, '', '+', 2);
+            }
+
+            function animateNumber(id, start, end, prefix = '', suffix = '', duration = 2) {
+                const element = document.getElementById(id);
+                gsap.fromTo(element, { innerHTML: start }, {
+                    innerHTML: end,
+                    duration: duration,
+                    ease: 'power1.inOut',
+                    onUpdate: function () {
+                        let value = parseFloat(this.targets()[0].innerHTML);
+                        if (id === 'total-assets' || id === 'overseas-sales') {
+                            value = value.toFixed(1);
+                        } else {
+                            value = Math.ceil(value).toLocaleString();
+                        }
+                        element.innerHTML = prefix + value + suffix;
+                    }
+                });
+            }
+
+
+    </script>
+
+
+    <!-- Features Section Script -->
+    <script>
+        $(document).ready(function() {
+            if (window.innerWidth > 768) {
+                $("body").niceScroll({
+                    cursoropacitymax: 0,
+                    scrollspeed: 60,
+                    mousescrollstep: 40,
+                });
+            }
+
+            $("img").attr("alt", "Dong Feng Motor, Singapore.");
+            $("a").attr("alt", "Dong Feng Motor, Singapore.");
+            $("a").attr("aria-label", "Dong Feng Motor, Singapore.");
+            
+            onScroll();
+            $(window).on('scroll resize', onScroll);
+
+            $(document).click(function(event) {
+                if (!$(event.target).closest('.onScrollNav').length) {
+                    $('.onScrollNav').removeClass('nav--open');
+                }
+            });
+
+            $('.onScrollNav, #top-nav').click(function(event) {
+                event.stopPropagation();
+            });
+
+            $(".nav-tabs-discover").click(function() {
+                $(this).parent().toggleClass("open-parent");
+            });
+
+            $(".menu-button").click(function() {
+                $("nav").addClass("nav--open");
+            });
+
+            $(".close-btn").click(function() {
+                $("nav").removeClass("nav--open");
+            });
+
+            const inViewport = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-inViewport");
+                    }
+                });
+            };
+            const observer = new IntersectionObserver(inViewport);
+            document.querySelectorAll('[data-inviewport]').forEach(el => observer.observe(el));
+
+            function checkScroll() {
+                var cElement = $('.c');
+                var mainContentElement = $('.content-container');
+                if (cElement.length && mainContentElement.length) {
+                    var sectionOffset = cElement.offset().top - 109;
+                    var scrollTop = $(window).scrollTop();
+                    var mainContentBottom = mainContentElement.offset().top + mainContentElement.outerHeight();
+                    if (scrollTop >= sectionOffset && scrollTop < mainContentBottom) {
+                        cElement.addClass('highlight');
+                    } else {
+                        cElement.removeClass('highlight');
+                    }
+                }
+            }
+            checkScroll();
+            $(window).scroll(checkScroll);
+
+            if ($(window).outerWidth() < 769) {
+                $(".tab-selector").mCustomScrollbar({ axis: "x", theme: "dark-thin" });
+            }
+
+            $(".tab-selector #spacious").addClass("selected");
+            $(".tab-selector .bar").css({ "width": 1.45 * $(".tab-selector a#spacious").width(), "left": "1em" });
+            $(".tab-selector .overlay").css("left", "20em");
+
+            $(".tab-selector a").click(function() {
+                var $this = $(this);
+                var id = $this.attr("id");
+
+                $(".tab-selector .tab").removeClass("selected active");
+                $this.addClass("selected active");
+
+                $(".main-content").hide();
+                $(".main-content." + id).show();
+
+                $(".tab-selector .bar").attr("class", "bar " + id);
+
+                let left = 16;
+                $this.prevAll().each(function() {
+                    left += $(this).innerWidth();
+                });
+
+                let widthMultiplier = 1.17;
+                if (id === 'spacious') widthMultiplier = 1.45;
+                if (id === 'technology' || id === 'efficiency') widthMultiplier = 1.51;
+
+                $(".tab-selector .bar").css({
+                    width: widthMultiplier * $this.width(),
+                    left: left + "px"
+                });
+                
+                $(".overlay, .bar").css({
+                    left: $this.position().left,
+                    width: $this.innerWidth()
+                });
+
+                if ($(window).outerWidth() < 769) {
+                    $('.tab-selector').mCustomScrollbar("scrollTo", left - 14);
+                }
+            });
+
+            $(".wrapper-carousel").owlCarousel({
+                margin: 5,
+                loop: true,
+                nav: true,
+                dots: true,
+                navText: ["<img src='images/box-features/arrow-left.svg' alt='Previous' />", "<img src='images/box-features/arrow-right.svg' alt='Next' />"],
+                responsive: { 0: { items: 1 } }
+            });
+        });
+
+        function onScroll() {
+            if ($("body").getNiceScroll) {
+                $("body").getNiceScroll().resize();
+            }
+            var window_top_position = $(window).scrollTop();
+            if (window_top_position > 0) {
+                $("#top-nav, nav").addClass("onScroll");
+            } else {
+                $("#top-nav, nav").removeClass("onScroll");
+            }
+        }
+    </script>
+
 
 
 </form>

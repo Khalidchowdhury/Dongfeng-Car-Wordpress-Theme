@@ -7,6 +7,14 @@ function mukto_enque_assets() {
     wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.css', array(), null);
     wp_enqueue_style('owl-carousel-theme', get_template_directory_uri() . '/assets/js/owl.theme.default.min.css', array(), null);
     wp_enqueue_style('default-style', get_template_directory_uri() . '/assets/css/Default.min.css', array(), null);
+    wp_enqueue_style('about-style', get_template_directory_uri() . '/assets/css/About-Us.min.css', array(), null);
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css');
+
+    if ( is_page('feature') ) {
+        wp_enqueue_style('box-features', get_template_directory_uri() . '/assets/css/Box-Features.min.css');
+        wp_enqueue_style('mcustom-scrollbar-css', get_template_directory_uri() . '/assets/js/jquery.mCustomScrollbar.css');
+    }
+
 
     // Favicon & Apple Touch Icons
     $favicons = [
@@ -39,6 +47,13 @@ function mukto_enque_assets() {
     wp_enqueue_script('gtm', 'https://www.googletagmanager.com/gtm.js?id=GTM-WWTBBNPH', array(), null, true);
     wp_add_inline_script('gtm', "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1085601246305010');fbq('track','PageView');");
     wp_add_inline_script('gtm', "!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'];ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js';n=n||{};var o=n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n;var a=document.createElement('script');a.type='text/javascript',a.async=!0,a.src=r+'?sdkid='+e+'&lib='+t;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a,s)};ttq.load('CRKIJ5RC77U855HRD5LG');ttq.page();}(window,document,'ttq');");
-
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js', array(), false, true);
+    
+    if ( is_page('feature') ) {
+        wp_enqueue_script('mcustom-scrollbar', get_template_directory_uri() . '/assets/js/jquery.mCustomScrollbar.js', array('jquery'), null, true);
+    }
+    if ( is_page('about') ) {
+        wp_enqueue_script('scrollmagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js', array(), null, true);
+    }
 }
 add_action('wp_enqueue_scripts', 'mukto_enque_assets');

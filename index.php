@@ -57,7 +57,7 @@
 
                     <?php //if no post
                         else: 
-                            get_template_part('template-parts/page/content','none');
+                            the_content();
                         endif;
                         wp_reset_postdata();
                         ?>

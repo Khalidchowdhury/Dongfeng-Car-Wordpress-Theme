@@ -8,3 +8,12 @@
     <?php get_template_part('template-parts/Two-Button'); ?>
     <?php get_template_part('template-parts/body_pnlNews'); ?>
     <?php get_template_part('template-parts/RTD'); ?>
+
+
+
+
+
+
+about_hero
+about_business 
+about_Inaugurated
